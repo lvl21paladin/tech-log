@@ -1,0 +1,95 @@
+:root {
+  --surface: #1c1d21;
+  --surface-alt: #232428;
+  --border: #303236;
+  --text-primary: #e6e4e0;
+  --text-secondary: #a6a29c;
+  --text-muted: #75726c;
+  --accent-bg: rgba(125, 178, 219, 0.12);
+  --accent-text: #8fc1e8;
+  --radius: 10px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--text-primary);
+  background: var(--surface);
+  line-height: 1.6;
+}
+
+.wrap {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1.5rem;
+}
+
+.nav a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.nav .brand {
+  font-weight: 600;
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+h1 { font-size: 26px; margin: 0 0 8px; }
+h2 { font-size: 20px; }
+h3 { font-size: 17px; }
+
+.intro { color: var(--text-secondary); margin: 0 0 2rem; max-width: 520px; }
+
+.card {
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 12px;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card:hover { border-color: #45484e; }
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.card-title { font-weight: 600; font-size: 16px; margin: 0; }
+.card-date { font-size: 12px; color: var(--text-muted); white-space: nowrap; }
+.card-excerpt { font-size: 14px; color: var(--text-secondary); margin: 0 0 12px; }
+
+.tags { display: flex; gap: 6px; flex-wrap: wrap; }
+.tag {
+  background: var(--accent-bg);
+  color: var(--accent-text);
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: var(--radius);
+}
+
+.post-header { margin-bottom: 1.5rem; }
+.post-meta { color: var(--text-muted); font-size: 13px; margin-bottom: 1rem; }
+.post-links { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 14px; }
+.post-links a { color: var(--accent-text); margin-right: 16px; }
+.back { display: inline-block; margin-bottom: 1.5rem; font-size: 14px; color: var(--text-secondary); text-decoration: none; }

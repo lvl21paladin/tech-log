@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('posts')).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+
+const formatter = new Intl.DateTimeFormat('en-US', { day: 'numeric', month: 'short', year: 'numeric' });
+---
+<BaseLayout title="Stian.dev — dev log">
+  <h1>Hi, I'm Stian</h1>
+  <p class="intro">I document the projects I build and the technology I learn along the way.</p>
+
+  {posts.map((post) => (
+    <a class="card" href={`${import.meta.env.BASE_URL}posts/${post.slug}/`}>
+      <div class="card-top">
+        <p class="card-title">{post.data.title}</p>
+        <span class="card-date">{formatter.format(post.data.date)}</span>
+      </div>
+      <p class="card-excerpt">{post.data.excerpt}</p>
+      <div class="tags">
+        {post.data.tags.map((tag) => <span class="tag">{tag}</span>)}
+      </div>
+    </a>
+  ))}
+</BaseLayout>

@@ -1,0 +1,39 @@
+<svg width="680" height="664" viewBox="0 0 680 664" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>GitOps deployment pipeline for the Chores app</title>
+<desc>Flowchart: a git push triggers GitHub Actions, which builds and pushes an image to GHCR. ArgoCD watches the GitOps repo and reconciles the K3s cluster, which runs Traefik and a Cloudflare Tunnel for secure routing.</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M2 1L8 5L2 9" fill="none" stroke="#8fc1e8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+<rect width="680" height="664" fill="#1c1d21"/>
+
+<rect x="160" y="40" width="360" height="64" rx="4" fill="#1e2a38" stroke="#3d5a76" stroke-width="0.5"/>
+<text x="340" y="64" text-anchor="middle" dominant-baseline="central" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="14" font-weight="500" fill="#e6e4e0">Git push</text>
+<text x="340" y="86" text-anchor="middle" dominant-baseline="central" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" fill="#a6c8e6">chores-app repository</text>
+<line x1="340" y1="104" x2="340" y2="164" stroke="#8fc1e8" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<rect x="160" y="164" width="360" height="64" rx="4" fill="#1e2a38" stroke="#3d5a76" stroke-width="0.5"/>
+<text x="340" y="188" text-anchor="middle" dominant-baseline="central" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="14" font-weight="500" fill="#e6e4e0">GitHub Actions</text>
+<text x="340" y="210" text-anchor="middle" dominant-baseline="central" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" fill="#a6c8e6">Build image, push to GHCR</text>
+<line x1="340" y1="228" x2="340" y2="288" stroke="#7bc9c4" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<rect x="160" y="288" width="360" height="64" rx="4" fill="#1c2e2c" stroke="#3d7a72" stroke-width="0.5"/>
+<text x="340" y="312" text-anchor="middle" dominant-baseline="central" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="14" font-weight="500" fill="#e6e4e0">ArgoCD</text>
+<text x="340" y="334" text-anchor="middle" dominant-baseline="central" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" fill="#8fd6cc">Watches lazylab-gitops repo</text>
+<line x1="340" y1="352" x2="340" y2="412" stroke="#7bc9c4" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<rect x="160" y="412" width="360" height="64" rx="4" fill="#1c2e2c" stroke="#3d7a72" stroke-width="0.5"/>
+<text x="340" y="436" text-anchor="middle" dominant-baseline="central" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="14" font-weight="500" fill="#e6e4e0">K3s cluster</text>
+<text x="340" y="458" text-anchor="middle" dominant-baseline="central" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" fill="#8fd6cc">Reconciles Chores app deployment</text>
+<line x1="340" y1="476" x2="340" y2="536" stroke="#7bc9c4" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<rect x="160" y="536" width="360" height="64" rx="4" fill="#1c2e2c" stroke="#3d7a72" stroke-width="0.5"/>
+<text x="340" y="560" text-anchor="middle" dominant-baseline="central" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="14" font-weight="500" fill="#e6e4e0">Traefik + Cloudflare Tunnel</text>
+<text x="340" y="582" text-anchor="middle" dominant-baseline="central" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" fill="#8fd6cc">Secure internal &amp; external routing</text>
+
+<rect x="200" y="628" width="14" height="14" rx="2" fill="#1e2a38" stroke="#3d5a76" stroke-width="0.5"/>
+<text x="222" y="635" dominant-baseline="central" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" fill="#a6a29c">CI: build &amp; publish</text>
+<rect x="380" y="628" width="14" height="14" rx="2" fill="#1c2e2c" stroke="#3d7a72" stroke-width="0.5"/>
+<text x="402" y="635" dominant-baseline="central" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" fill="#a6a29c">CD: GitOps deploy</text>
+</svg>

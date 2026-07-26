@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts');
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+
+const formatter = new Intl.DateTimeFormat('en-US', { day: 'numeric', month: 'short', year: 'numeric' });
+---
+<BaseLayout title={`${post.data.title} — Stian.dev`}>
+  <a class="back" href={import.meta.env.BASE_URL}>&larr; All projects</a>
+  <div class="post-header">
+    <h1>{post.data.title}</h1>
+    <p class="post-meta">{formatter.format(post.data.date)}</p>
+    <div class="tags">
+      {post.data.tags.map((tag) => <span class="tag">{tag}</span>)}
+    </div>
+  </div>
+  <Content />
+  {(post.data.repo || post.data.demo) && (
+    <div class="post-links">
+      {post.data.repo && <a href={post.data.repo} target="_blank">Repo</a>}
+      {post.data.demo && <a href={post.data.demo} target="_blank">Demo</a>}
+    </div>
+  )}
+</BaseLayout>
