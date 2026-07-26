@@ -8,8 +8,7 @@ const posts = (await getCollection('posts')).sort(
 
 const formatter = new Intl.DateTimeFormat('en-US', { day: 'numeric', month: 'short', year: 'numeric' });
 ---
-<BaseLayout title="Stian.dev — dev log">
-  <h1>Hi, I'm Stian</h1>
+<BaseLayout title="tech log">
   <p class="intro">I document the projects I build and the technology I learn along the way.</p>
 
   {posts.map((post) => (
