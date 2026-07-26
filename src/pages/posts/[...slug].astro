@@ -15,7 +15,7 @@ const { Content } = await post.render();
 
 const formatter = new Intl.DateTimeFormat('en-US', { day: 'numeric', month: 'short', year: 'numeric' });
 ---
-<BaseLayout title={`${post.data.title} — Stian.dev`}>
+<BaseLayout title={`${post.data.title} — `}>
   <a class="back" href={import.meta.env.BASE_URL}>&larr; All projects</a>
   <div class="post-header">
     <h1>{post.data.title}</h1>
