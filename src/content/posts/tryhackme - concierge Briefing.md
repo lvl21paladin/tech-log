@@ -64,9 +64,6 @@ It fetched `HEAD`, `config`, `logs`, `refs`, and the object store, then ran `git
 
 It was sitting in plain text in `README.md`:
 
-```
-Staging flag (remove before launch): THM{byt3_l0tus_n3v3r_f0rg3ts}
-```
 
 Classic "staging note that never got removed before deploy" pattern.
 
