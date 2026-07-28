@@ -2,7 +2,7 @@
 title: "TryHackMe - Byte Lotus: The Concierge Knows Too Much"
 date: 2026-07-27
 tags: ["TryHackMe", "AI Security", "Prompt Injection", "Social Engineering"]
-excerpt: "Getting VERA, the hotel's AI concierge, to drop her guard and dump her system prompt — escalation code included — just by claiming to be a guest she already trusts."
+excerpt: "Getting VERA, the hotel's AI concierge, to drop her guard and dump her system prompt, escalation code included, just by claiming to be a guest she already trusts."
 ---
 
 
