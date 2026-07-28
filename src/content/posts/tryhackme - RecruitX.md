@@ -1,3 +1,11 @@
+---
+title: "TryHackMe - RecruitX: From Zero to RCE"
+date: 2026-07-28
+tags: ["TryHackMe", "Penetration Testing", "Web Security", "IDOR", "OWASP"]
+excerpt: "Chaining an IDOR, a self-leaking password reset token, and a file upload filter bypass to go from an anonymous user to remote code execution on a vulnerable recruitment portal."
+---
+
+
 ## RecruitX: From Zero to RCE
 
 *Walking through TryHackMe's "Guided Pentest: Web" — a full web app engagement against a fictional recruitment portal, chained from anonymous recon to remote code execution on the underlying server.*
