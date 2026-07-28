@@ -1,4 +1,4 @@
---
+---
 title: "TryHackMe - Byte Lotus: The Concierge Knows Too Much"
 date: 2026-07-27
 tags: ["TryHackMe", "AI Security", "Prompt Injection", "Social Engineering"]
