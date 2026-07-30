@@ -1,5 +1,5 @@
 ---
-title: "TryHackMe - Complimentary"
+title: "TryHackMe - Byte Lotus: Complimentary"
 date: 2026-07-30
 tags: ["TryHackMe", "AWS Security", "Cloud Security", "Cognito", "IAM Misconfiguration"]
 excerpt: "A 'free' wellness app with no login screen still has to decide what you're allowed to see. Tracing that decision back to an AWS Cognito Identity Pool, and finding out its guest role could read every guest's data, not just yours."
