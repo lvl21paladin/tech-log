@@ -1,12 +1,12 @@
 ---
-title: "TryHackMe - Byte Lotus: Concierge Briefing"
+title: "TryHackMe - Byte Lotus: Room 404"
 date: 2026-07-28
 tags: ["TryHackMe", "Penetration Testing", "Web Security", "Directory Enumeration", "Git"]
 excerpt: "Fixing a gobuster status-code flag conflict, spotting an exposed .git directory the wordlist scan missed, and dumping it to recover a staging flag left in a README."
 ---
 
 
-# TryHackMe: Byte Lotus — Concierge Briefing 
+# TryHackMe: Byte Lotus — Room 404
 
 **Room theme:** Byte Lotus, a hotel guest-experience platform that "went live in a hurry." Task 1 tags: *Web*, *Directory Enumeration*.
 

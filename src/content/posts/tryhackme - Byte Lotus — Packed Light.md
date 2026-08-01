@@ -1,11 +1,11 @@
 ---
-title: "TryHackMe - Byte Lotus: Concierge Briefing"
+title: "TryHackMe - Byte Lotus: Packed Light"
 date: 2026-07-30
 tags: ["TryHackMe", "Penetration Testing", "Network Forensics", "Wireshark", "Keylogger", "Exfiltration"]
 excerpt: "Tracing a hotel guest-network capture to a self-installing Python keylogger that smuggled each keystroke out one HTTP cookie at a time, then recovering the XOR key from its own source to decode the exfil."
 ---
 
-# TryHackMe: Byte Lotus — Concierge Briefing (Covert Channel Writeup)
+# TryHackMe: Byte Lotus — Packed Light
 
 **Room theme:** Byte Lotus again, this time a short packet capture (`traffic.pcapng`) pulled from the guest network. No attackbox provided — analysis done locally in Wireshark on macOS.
 
