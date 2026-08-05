@@ -72,7 +72,7 @@ curl -s "https://cryptocabanaf5scjagc.blob.core.windows.net/vault/backup-service
 ```json
 {
   "client_id": "dbcf2923-e4eb-4b72-a0a4-688aa1185cf5",
-  "client_secret": "UBX8Q~xM6vawWZ5u2C-VhLlsB2Cx2dAuxcrAlbRg",
+  "client_secret": "secret",
   "tenant_id": "8f8c5f8e-42d3-4ceb-97ad-241bbf446d6c",
   "key_vault_name": "ccabana-kv-f5scjagc",
   "key_vault_uri": "https://ccabana-kv-f5scjagc.vault.azure.net/",
